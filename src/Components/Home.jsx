@@ -11,9 +11,9 @@ export const Home = () => (
           sequence={[
             "Ishant Gupta",
             2000,
-            "Frontend Dev",
+            "Frontend Developer",
             2000,
-            "Backend Dev",
+            "Backend Developer",
             2000,
           ]}
           wrapper="span"
