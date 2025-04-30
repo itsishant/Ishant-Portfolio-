@@ -4,6 +4,7 @@ import { Header } from "./Components/Header";
 import { Home } from "./Components/Home";
 import { About } from "./Components/About";
 import { Skills } from "./Components/Skills";
+import { Contact } from "./Components/Contact";
 
 export const App = () => {
   return (
@@ -15,6 +16,7 @@ export const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/aboutMe" element={<About />} />
             <Route path="/my-skills" element={<Skills />} />
+            <Route path="/contactMe" element={<Contact />} />
           </Routes>
         </div>
       </Router>
