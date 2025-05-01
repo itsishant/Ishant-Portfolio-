@@ -46,7 +46,7 @@ export const Contact = () => {
               ></textarea>
             </div>
             <button
-              type="submit"
+              type="submit" 
               className="w-full py-3  bg-slate-900 hover:bg-slate-500 text-white font-bold rounded-lg transition"
             >
               Send Message

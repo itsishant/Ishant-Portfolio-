@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 import { About } from "./About";
 
 export const Home = () => (
-  <main className="mt-16 md:mt-20 pb-20 flex flex-col items-center">
+  <main className="mt- md:mt-20 pb-20 flex flex-col items-center">
     <div className="px-4 md:px-8 lg:px-16 text-center max-w-3xl">
       <h2 className="text-4xl sm:text-6xl font-mono font-bold text-white">
         I am{" "}
@@ -11,13 +11,13 @@ export const Home = () => (
           sequence={[
             "Ishant Gupta",
             2000,
-            "Frontend Developer",
+            "a Frontend Developer",
             2000,
-            "Backend Developer",
+            "a Backend Developer",
             2000,
           ]}
           wrapper="span"
-          speed={80}
+          speed={75}
           repeat={Infinity}
           className=" bg-gradient-to-r from-purple-700 via-pink-500 to-red-500 bg-clip-text text-transparent"
         />
