@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 import { About } from "./About";
 
 export const Home = () => (
-  <main className="mt- md:mt-20 pb-20 flex flex-col items-center">
+  <main className="mt-16 md:mt-20 pb-20 flex flex-col items-center">
     <div className="px-4 md:px-8 lg:px-16 text-center max-w-3xl">
       <h2 className="text-4xl sm:text-6xl font-mono font-bold text-white">
         I am{" "}
