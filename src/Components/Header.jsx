@@ -6,8 +6,8 @@ export const Header = () => {
   const links = [
     { label: "Home", path: "/" },
     { label: "About", path: "/aboutMe" },
-    { label: "Projects", path: "/my-projects" },
     { label: "Skills", path: "/my-skills" },
+    { label: "Projects", path: "/my-projects" },
     { label: "Contact", path: "/contactMe" },
   ];
 
