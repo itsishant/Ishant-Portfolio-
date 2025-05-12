@@ -77,6 +77,14 @@ export const Contact = () => {
             >
               LinkedIn
             </a>
+            <a
+              href="https://leetcode.com/u/itsishant/"
+              target="_blank"
+              rel="noopener"
+              className="text-slate-400 hover:text-white"
+            >
+              LeetCode
+            </a>
           </div>
         </div>
       </section>

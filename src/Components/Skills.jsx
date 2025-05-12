@@ -7,28 +7,28 @@ export const Skills = () => {
       <img
         src="js.png"
         alt=""
-        className="absolute top-[16%] left-[20%] w-[60px] h-[60px] rounded-xl shadow-md shadow-yellow-600 animate-bounce"
+        className="absolute top-[20%] md:top-[16%] left-[10%] md:left-[20%] w-[60px] h-[60px] rounded-xl shadow-md shadow-yellow-600 animate-bounce"
         style={{animation: "bounce 3s infinite"}}
       />
       {/* Floating Python image - bottom right */}
       <img
         src="python.png"
         alt=""
-        className="absolute top-[50%] left-[15%] w-[60px] h-[60px] rounded-xl  shadow-md shadow-blue-900 animate-bounce"
+        className="absolute top-[65%] md:top-[50%] left-[10%] md:left-[15%] w-[60px] h-[60px] rounded-xl  shadow-md shadow-blue-900 animate-bounce"
         style={{animation: "bounce 3s infinite"}}
       />
 
        <img
         src="java.png"
         alt=""
-        className="absolute top-[20%] right-[24%] w-[60px] h-[60px] rounded-xl shadow-md shadow-blue-900 animate-bounce"
+        className="absolute top-[21%] md:top-[20%] right-[10%] md:right-[24%] w-[60px] h-[60px] rounded-xl shadow-md shadow-blue-900 animate-bounce"
         style={{animation: "bounce 3s infinite"}}
       />
 
 <img
         src="c.png"
         alt=""
-        className="absolute top-[60%] right-[19%] w-[60px] h-[60px] rounded-xl shadow-md shadow-blue-800 animate-bounce"
+        className="absolute top-[65%] md:top-[60%] right-[7%] md:right-[19%] w-[60px] h-[60px] rounded-xl shadow-md shadow-blue-800 animate-bounce"
         style={{animation: "bounce 3s infinite"}}
       />
 
@@ -36,7 +36,7 @@ export const Skills = () => {
 <img
         src="React.png"
         alt=""
-        className="absolute top-[32%] left-[4%] w-[62px] h-[60px] rounded-xl shadow-md shadow-blue-300 animate-bounce"
+        className="absolute top-[37%] md:top-[32%] left-[10%] md:left-[4%] w-[62px] h-[60px] rounded-xl shadow-md shadow-blue-300 animate-bounce"
         style={{animation: "bounce 3s infinite"}}
       />
 
@@ -44,35 +44,35 @@ export const Skills = () => {
 <img
         src="tailwind-css.png"
         alt=""
-        className="absolute top-[38%] right-[8%] w-[65px] h-[65px] rounded-xl shadow-md shadow-black animate-bounce"
+        className="absolute top-[38%] md:top-[38%] right-[8%] w-[65px] h-[65px] rounded-xl shadow-md shadow-black animate-bounce"
         style={{animation: "bounce 3s infinite"}}
       />
 
 <img
         src="1646733543.webp"
         alt=""
-        className="absolute top-[80%] right-[5%] w-[65px] h-[65px] rounded-xl shadow-md shadow-black animate-bounce"
+        className="absolute top-[76%] md:top-[80%] right-[5%] w-[65px] h-[65px] rounded-xl shadow-md shadow-black animate-bounce"
         style={{animation: "bounce 3s infinite"}}
       />
 
 <img
         src="mongodb (4).png"
         alt=""
-        className="absolute top-[74%] left-[7%] w-[70px] h-[70px] rounded-xl  shadow-md shadow-green-900 animate-bounce"
+        className="absolute top-[76%] md:top-[74%] left-[7%] w-[70px] h-[70px] rounded-xl  shadow-md shadow-green-900 animate-bounce"
         style={{animation: "bounce 3s infinite"}}
       />
 
 <img
         src="git.png"
         alt=""  
-        className="absolute top-[86%] left-[26%] w-[60px] h-[60px] rounded-xl  shadow-md shadow-orange-700 animate-bounce"
+        className="absolute top-[94%] md:top-[86%] left-[10%] md:left-[26%] w-[60px] h-[60px] rounded-xl  shadow-md shadow-orange-700 animate-bounce"
         style={{animation: "bounce 3s infinite"}}
       />
 
 <img
         src="postman.png"
         alt=""
-        className="absolute top-[90%] right-[28%] w-[65px] h-[65px] rounded-full shadow-md shadow-orange-900 animate-bounce"
+        className="absolute top-[94%] md:top-[90%] right-[8%] md:right-[28%] w-[65px] h-[65px] rounded-full shadow-md shadow-orange-900 animate-bounce"
         style={{animation: "bounce 3s infinite"}}
       />
 
