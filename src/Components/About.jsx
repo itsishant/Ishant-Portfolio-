@@ -26,7 +26,7 @@ export const About = () => {
           <img
             src="image.jpg"
             alt="Ishant Gupta"
-            className="h-40 w-40 md:h-64 md:w-64 object-cover rounded-full border-4 border-white transition-transform duration-700 transform hover:scale-105"
+            className="h-40 w-40 md:h-64 md:w-64 object-cover rounded-full  border-black transition-transform duration-700 transform hover:scale-105"
           />
         </div>
       </div>
