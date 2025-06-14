@@ -5,6 +5,7 @@ import { Home } from "./Components/Home";
 import { About } from "./Components/About";
 import { Skills } from "./Components/Skills";
 import { Contact } from "./Components/Contact";
+import { Projects } from "./Components/Projects";
 
 export const App = () => {
   return (
@@ -17,6 +18,7 @@ export const App = () => {
             <Route path="/aboutMe" element={<About />} />
             <Route path="/my-skills" element={<Skills />} />
             <Route path="/contactMe" element={<Contact />} />
+            <Route path="/my-projects" element={<Projects />}/>
           </Routes>
         </div>
       </Router>
