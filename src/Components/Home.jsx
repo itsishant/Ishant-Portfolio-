@@ -2,7 +2,7 @@
   import { About } from "./About";
   import { Skills } from "./Skills";
   import { motion } from "framer-motion";
-  import {TypewriterEffectSmooth } from "./ui/Type-Writer";
+  import {TypewriterEffectSmooth } from "./ui/Type-writer";
   import "@fontsource/poppins"; 
   import "@fontsource/poppins/400.css"; 
   import "@fontsource/poppins/400-italic.css";
