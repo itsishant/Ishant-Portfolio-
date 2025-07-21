@@ -1,111 +1,66 @@
 import { animate, hover } from "motion";
+import ShinyText from "./ui/Shiny-text";
+import { Button } from "@material-tailwind/react";
+ 
 
 export const Skills = () => {
   return (
-    <div className="relative flex justify-center items-center py-16 px-4 md:px-10">
-      {/* Floating JS image - top left */}
-      <img
-        src="js.png"
-        alt=""
-        className="absolute top-[20%] md:top-[16%] left-[10%] md:left-[20%] w-[60px] h-[60px] rounded-xl shadow-md shadow-yellow-600 animate-bounce"
-        style={{animation: "bounce 3s infinite"}}
-      />
-      {/* Floating Python image - bottom right */}
-      <img
-        src="python.png"
-        alt=""
-        className="absolute top-[65%] md:top-[50%] left-[10%] md:left-[15%] w-[60px] h-[60px] rounded-xl  shadow-md shadow-blue-900 animate-bounce"
-        style={{animation: "bounce 3s infinite"}}
-      />
-
-       <img
-        src="java.png"
-        alt=""
-        className="absolute top-[21%] md:top-[20%] right-[10%] md:right-[24%] w-[60px] h-[60px] rounded-xl shadow-md shadow-blue-900 animate-bounce"
-        style={{animation: "bounce 3s infinite"}}
-      />
-
-<img
-        src="c.png"
-        alt=""
-        className="absolute top-[65%] md:top-[60%] right-[7%] md:right-[19%] w-[60px] h-[60px] rounded-xl shadow-md shadow-blue-800 animate-bounce"
-        style={{animation: "bounce 3s infinite"}}
-      />
-
+    <div className="relative md:py-16 md:mt-12 px-4 md:px-10">
       
-<img
-        src="React.png"
-        alt=""
-        className="absolute top-[37%] md:top-[32%] left-[10%] md:left-[4%] w-[62px] h-[60px] rounded-xl shadow-md shadow-blue-300 animate-bounce"
-        style={{animation: "bounce 3s infinite"}}
-      />
-
-
-<img
-        src="tailwind-css.png"
-        alt=""
-        className="absolute top-[38%] md:top-[38%] right-[8%] w-[65px] h-[65px] rounded-xl shadow-md shadow-black animate-bounce"
-        style={{animation: "bounce 3s infinite"}}
-      />
-
-<img
-        src="1646733543.webp"
-        alt=""
-        className="absolute top-[76%] md:top-[80%] right-[5%] w-[65px] h-[65px] rounded-xl shadow-md shadow-black animate-bounce"
-        style={{animation: "bounce 3s infinite"}}
-      />
-
-<img
-        src="mongodb (4).png"
-        alt=""
-        className="absolute top-[76%] md:top-[74%] left-[7%] w-[70px] h-[70px] rounded-xl  shadow-md shadow-green-900 animate-bounce"
-        style={{animation: "bounce 3s infinite"}}
-      />
-
-<img
-        src="git.png"
-        alt=""  
-        className="absolute top-[94%] md:top-[86%] left-[10%] md:left-[26%] w-[60px] h-[60px] rounded-xl  shadow-md shadow-orange-700 animate-bounce"
-        style={{animation: "bounce 3s infinite"}}
-      />
-
-<img
-        src="postman.png"
-        alt=""
-        className="absolute top-[94%] md:top-[90%] right-[8%] md:right-[28%] w-[65px] h-[65px] rounded-full shadow-md shadow-orange-900 animate-bounce"
-        style={{animation: "bounce 3s infinite"}}
-      />
-
-
-
-      {/* Main content */}
-      <div className="w-full max-w-5xl text-center">
-        <div className="bg-gradient-to-r from-violet-600 via-fuchsia-500 to-pink-500 bg-clip-text text-transparent text-5xl font-bold py-10">
-          Technical Skills
+      <div className="bg-neutral-800 shadow-2xl w-44 mx-auto rounded-xl mb-12">
+        <div className="bg-clip-text text-transparent text-4xl md:text-5xl font-bold py-2 text-center" style={{ fontFamily: "Poppins" }}>
+          <ShinyText text="Skills" disabled={false} speed={2} />
         </div>
-
-        {/* Skills Sections */}
-        <SkillSection title="Languages" items={["Java", "JavaScript", "C", "Python"]} />
-        <SkillSection title="Libraries and Frameworks" items={["Express", "Zod", "React", "TailwindCSS"]} />
-        <SkillSection title="Databases" items={["MongoDB"]} />
-        <SkillSection title="Tools and Technologies" items={["Git", "Postman"]} />
       </div>
+
+      <h2 className="text-neutral-500 text-2xl font-semibold text-center mb-4">Languages</h2>
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-2 md:grid-cols-4 md:gap-1 md:max-w-xl md:space-x-2 mx-1 md:mx-auto mb-12">
+        <TechButton name="JavaScript" colorClass="yellow-400" />
+        <TechButton name="Java" colorClass="red-400" />
+        
+        <TechButton name="TypeScript" colorClass="indigo-400" />
+        <TechButton name="C" colorClass="violet-400" />
+      </div>
+
+      <h2 className="text-neutral-500 text-2xl font-semibold text-center mb-4">Tools & Technologies</h2>
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-2  md:grid-cols-3 md:gap-4 max-w-md md:max-w-xl mx-1 md:mx-auto">
+        <TechButton name="React.js" colorClass="blue-400" />
+        <TechButton name="Tailwind CSS" colorClass="teal-400" />
+        <TechButton name="Express.js" colorClass="gray-400" />
+        <TechButton name="MongoDB" colorClass="green-400" />
+        <TechButton name="Prisma ORM" colorClass="purple-400" />
+        <TechButton name="Zod" colorClass="pink-400" />
+        <TechButton name="Git" colorClass="orange-400" />
+        <TechButton name="Postman" colorClass="amber-400" />
+        <TechButton className="mr-44" name="Docker" colorClass="sky-400" />
+      </div>
+      
     </div>
   );
 };
+const TechButton = ({ name }) => {
+  const colorMap = {
+    "JavaScript": "text-yellow-400 border-yellow-400 hover:bg-yellow-400",
+    "Python": "text-cyan-400 border-cyan-400 hover:bg-cyan-400",
+    "Java": "text-red-400 border-red-400 hover:bg-red-400",
+    "C": "text-white-400 border-neutral-500 hover:bg-indigo-400",
+    "TypeScript": "text-indigo-400 border-indigo-400 hover:bg-violet-400",
+    "React.js": "text-blue-400 border-blue-400 hover:bg-blue-400",
+    "Tailwind CSS": "text-teal-400 border-teal-400 hover:bg-teal-400",
+    "Express.js": "text-gray-400 border-gray-400 hover:bg-gray-400",
+    "MongoDB": "text-green-400 border-green-400 hover:bg-green-400",
+    "Prisma ORM": "text-purple-400 border-purple-400 hover:bg-purple-400",
+    "Zod": "text-pink-400 border-pink-400 hover:bg-pink-400",
+    "Git": "text-orange-400 border-orange-400 hover:bg-orange-400",
+    "Postman": "text-amber-400 border-amber-400 hover:bg-amber-400",
+    "Docker": "text-sky-400 border-sky-400 hover:bg-sky-400", 
+  };
 
-const SkillSection = ({ title, items }) => (
-  <div className="text-white font-bold text-2xl pt-10">
-    {title}
-    <div className="flex flex-wrap justify-center gap-4 py-6 text-lg">
-      {items.map((item, index) => (
-        <span
-          key={index}
-          className="border-2 border-white px-6 py-3 rounded-xl shadow-lg shadow-slate-200/10 duration-300 transform hover:scale-110 hover:shadow-2xl hover:bg-slate-900 hover:text-white"
-        >
-          {item}
-        </span>
-      ))}
-    </div>
-  </div>
-);
+  return (
+    <span className={`border  hover:text-black transition ml-8 mr-4 py-1 rounded-lg font-semibold text-center ${colorMap[name]}`}>
+      {name}
+    </span>
+    
+
+  );
+};

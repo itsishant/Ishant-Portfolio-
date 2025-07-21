@@ -1,35 +1,23 @@
-import { useNavigate } from "react-router-dom";
+import ShinyText from "./ui/Shiny-text"
+import { motion } from "framer-motion"
 
 export const About = () => {
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate("/");
-  };
-
-  return (
-    <div id="aboutMeSection" className="min-h-screen px-4 py-10">
-      <h1 className="text-4xl md:text-5xl text-center bg-gradient-to-r from-violet-600 via-fuchsia-500 to-pink-500 bg-clip-text text-transparent  font-bold mb-12 md:mb-24">
-        About Me
-      </h1>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-6">
-        <div className="text-white font-semibold text-lg space-y-5 border w-full max-w-[800px] border-amber-50 p-6 md:p-12 rounded-2xl transition duration-700 transform hover:scale-105 hover:bg-gray-900">
-          <p>I am Ishant Gupta, a first-year Computer Science student.</p>
-          <p>I have a strong passion for Web3, Blockchain, DSA, and the MERN Stack.</p>
-          <p>I focus on building efficient and innovative solutions through a logical approach.</p>
-          <p>Outside of programming, I enjoy playing badminton and listening to music.</p>
-          <p>I am driven by the desire to learn, grow, and explore emerging technologies.</p>
-        </div>
-
-        <div className="animate-pulse flex justify-center">
-          <img
-            src="image.jpg"
-            alt="Ishant Gupta"
-            className="h-40 w-40 md:h-64 md:w-64 object-cover rounded-full  border-black transition-transform duration-700 transform hover:scale-105"
-          />
+  return(
+    <div>
+      <div className="bg-neutral-800 mt-12 shadow-2xl md:w-60 w-56 mx-auto rounded-xl mb-12">
+        <div className="bg-clip-text text-transparent text-4xl md:text-5xl font-bold py-3 text-center" style={{ fontFamily: "Poppins" }}>
+          <ShinyText text="About" disabled={false} speed={2} />
         </div>
       </div>
+      <motion.div
+      initial={{ opacity: 0, x: -20 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.4, ease: "easeInOut" }}
+  viewport={{ once: true }}
+      style={{fontFamily: "Poppins"}} className="text-neutral-400 md:ml-0 ml-1 p-1  md:text-center ">
+        I like solving problems by writing clean and simple code that works well.
+When I'm not coding, I enjoy playing badminton or listening to music <span className="bg-neutral-600 text-white p-0.2">open to work</span>
+      </motion.div> 
     </div>
-  );
-};
+  )
+}
