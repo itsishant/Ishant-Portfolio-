@@ -16,7 +16,7 @@ animate={{
 transition={{
   duration:0.2, ease:"easeInOut"
 }}
-className="mt-12 h-14 md:w-112 mx-12  flex justify-center rounded-full bg-gradient-to-r from-gray-900 shadow-2xl  to-gray-900 to-blue-gray-800 md:mx-auto">
+className="mt-12 h-14 md:w-112 mx-10  flex justify-center rounded-full bg-gradient-to-r from-gray-900 shadow-2xl  to-gray-900 to-blue-gray-800 md:mx-auto">
   <motion.div
   className="flex justify-center gap-12 md:gap-18 mb-0.5">
  
