@@ -1,10 +1,8 @@
   // Home.jsx
-  import { TypeAnimation } from "react-type-animation";
   import { About } from "./About";
-  import { useTypewriter } from "use-typewriter-hook";
   import { Skills } from "./Skills";
   import { motion } from "framer-motion";
-  import { TypewriterEffect, TypewriterEffectSmooth } from "./ui/type-writer";
+  import {TypewriterEffectSmooth } from "./ui/type-writer";
   import "@fontsource/poppins"; 
   import "@fontsource/poppins/400.css"; 
   import "@fontsource/poppins/400-italic.css";
