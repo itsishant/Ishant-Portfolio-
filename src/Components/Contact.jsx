@@ -15,8 +15,8 @@ export const Contact = () => {
   whileInView={{ opacity: 1, x: 0 }}
   transition={{ duration: 0.4, ease: "easeInOut" }}
   viewport={{ once: true }}
-      className="text-sm md:flex md:justify-center p-1 text-neutral-400" style={{fontFamily: "Poppins"}} >
-        Feel free to contact me at<sapn className=" p-1  md:p-0  md:ml-1 underline " > <a href="modakmania@gmail.com"> modakmania@gmail.com </a> </sapn>
+      className=" md:flex md:justify-center p-1 text-neutral-400" style={{fontFamily: "Poppins"}} >
+        Reach me via email<sapn className="  md:p-0  md:ml-1 underline " > <a href="modakmania@gmail.com"> modakmania@gmail.com </a> </sapn>
       </motion.span>
 
       <div className="flex ">

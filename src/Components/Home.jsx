@@ -32,7 +32,7 @@ import { Contact } from "./Contact";
       <p className="text-neutral-500 font-semibold flex flex-wrap items-center">
       <span className="ml-9 md:ml-0">  Innovating solutions, designing experiences, </span> 
         <span className="hidden sm:inline"> and&nbsp; </span>
-        <span className="block md:inline-block mb-0 md:mb-3 ml-25 md:ml-0 text-center text-base sm:text-lg">
+        <span className="block md:inline-block mb-0 md:mb-3 ml-20 md:ml-0  text-center text-base sm:text-lg">
   <TypewriterEffectSmooth
     words={words}
     cursor

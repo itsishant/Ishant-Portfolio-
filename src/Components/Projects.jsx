@@ -27,7 +27,7 @@ export const Projects =  () => {
   playsInline
   className="rounded-4xl p-2  w-full h-auto"
 />
-<a href="https://github.com/itsishant/paytm" className="ml-4 flex  font-bold text-2xl text-neutral-400 hover:text-neutral-200 mb-1">GitHub <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 ml-1 mt-0.5">
+<a href="https://github.com/itsishant/paytm" className="ml-4 flex  font-bold text-lg text-neutral-400 hover:text-neutral-200 mb-1">GitHub <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4 ml-1 mt-1.5">
   <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"  />
 </svg>
 </a>
@@ -45,7 +45,7 @@ export const Projects =  () => {
   playsInline
   className="rounded-4xl p-2  w-full h-auto"
 />
-<a href="https://github.com/itsishant/paytm" className="ml-4 flex  font-bold text-2xl text-neutral-400 hover:text-neutral-200 mb-1 mt-5">GitHub <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 ml-1 mt-0.5">
+<a href="https://github.com/itsishant/paytm" className="ml-4 flex  font-bold text-lg text-neutral-400 hover:text-neutral-200 mb-1 mt-5">GitHub <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4 ml-1 mt-1.5">
   <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"  />
 </svg>
 </a>
