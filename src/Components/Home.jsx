@@ -59,7 +59,7 @@ import { Contact } from "./Contact";
           class="bg-blue-500 dark:bg-blue-600 group relative shadow-[0px_1px_2px_0px_rgba(255,255,255,0.1)inset, 0px-1px_2px_0px_rgba(255,255,255,0.1)_inset] rounded-xl w-44 h-16 flex justify-center items-center p-4">
           <motion.button
           style={{ fontFamily:  "Poppins", font: "extrabold" }} className="hover:cursor-pointer bg-clip-text text-3xl font-bold text-black">
-             <a href="Ishant-Resume.pdf" download>   Resume </a>
+             <a href="Resume (3).pdf" download>   Resume </a>
               <span className="absolute insert-x-0 bottom-px bg-gradient-to-r from transparent via caret-indigo-500 to-transparent h-px  w-3/4 mx auto"></span>
           </motion.button>
       </motion.div>

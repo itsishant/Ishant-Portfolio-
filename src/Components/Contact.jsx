@@ -10,13 +10,13 @@ export const Contact = () => {
         </div>
       </div>
 
-      <motion.span 
+      <motion.span k
       initial={{ opacity: 0, x: -20 }}
   whileInView={{ opacity: 1, x: 0 }}
   transition={{ duration: 0.4, ease: "easeInOut" }}
   viewport={{ once: true }}
       className=" md:flex md:justify-center p-1 text-neutral-400" style={{fontFamily: "Poppins"}} >
-        Reach me via email<sapn className="  md:p-0  md:ml-1 underline " > <a href="mailto: modakmania@gmail.com"> modakmania@gmail.com </a> </sapn>
+        Reach me via email<sapn classNamek="  md:p-0  md:ml-1 underline " > <a href="mailto: modakmania@gmail.com"> modakmania@gmail.com </a> </sapn>
       </motion.span>
 
       <div className="flex gap-1">
