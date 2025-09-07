@@ -21,7 +21,7 @@ export const Contact = () => {
 
       <div className="flex gap-1">
         <div className="bg-neutral-800 mt-6 shadow-2xl md:w-60 w-20  mx-auto rounded-full mb-12">
-        <div className="bg-clip-text text-transparent text-sm md:text-4xl font- px-2 py-0.5 text-center" >
+        <div className="bg-clip-text text-transparent text-sm md:text-4xl font- px-2 py-0.c5 text-center" >
           <span className="text-neutral-200 flex gap-0.5"> <a href="https://github.com/itsishant" className="md:ml-8 md:mt-1 md:text-neutral-300" style={{fontFamily: "Poppins"}}>GitHub</a> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4 md:size-8 space-x-0.5  mt-1">
   <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"  />
 </svg> </span>
