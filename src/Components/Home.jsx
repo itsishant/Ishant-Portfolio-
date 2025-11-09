@@ -77,7 +77,7 @@ export const Home = () => (
                 className="hover:cursor-pointer  bg-clip-text  text-lg font-bold text-black"
               >
                 <a
-                  href="Resume (3).pdf"
+                  href="Resume.pdf"
                   download
                   className="flex justify-center items-center gap-1 text-neutral-200 tracking-tight font-semibold"
                 >
