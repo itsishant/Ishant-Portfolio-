@@ -10,6 +10,7 @@ import { BackgroundBeams } from "./Components/ui/background-beams";
 export const App = () => {
   return (
     <div className="relative min-h-screen w-full bg-black text-white overflow-hidden">
+      <BackgroundBeams />
       <div className="relative z-10">
         <Router>
           <Header />
