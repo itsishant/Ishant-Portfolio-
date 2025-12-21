@@ -5,7 +5,6 @@ import { motion, stagger, useAnimate, useInView } from "motion/react";
 import { useEffect } from "react";
 
 export const TypewriterEffect = ({ words, className, cursorClassName }) => {
-  // split text inside of words into array of characters
   const wordsArray = words.map((word) => {
     return {
       ...word,
@@ -28,7 +27,7 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
           duration: 0.3,
           delay: stagger(0.1),
           ease: "easeInOut",
-        },
+        }
       );
     }
   }, [isInView]);
@@ -45,7 +44,7 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
                   key={`char-${index}`}
                   className={cn(
                     `dark:text-white text-black opacity-0 hidden`,
-                    word.className,
+                    word.className
                   )}
                 >
                   {char}
@@ -61,7 +60,7 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
     <div
       className={cn(
         "text-base sm:text-xl md:text-3xl lg:text-5xl font-sans text-center",
-        className,
+        className
       )}
     >
       {renderWords()}
@@ -77,7 +76,7 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
         }}
         className={cn(
           "inline-block rounded-sm w-[4px] h-1 md:h-1 lg:h-1 bg-blue-500",
-          cursorClassName,
+          cursorClassName
         )}
       ></motion.span>
     </div>
@@ -89,7 +88,6 @@ export const TypewriterEffectSmooth = ({
   className,
   cursorClassName,
 }) => {
-  // split text inside of words into array of characters
   const wordsArray = words.map((word) => {
     return {
       ...word,
@@ -157,7 +155,7 @@ export const TypewriterEffectSmooth = ({
         }}
         className={cn(
           "block rounded-sm md:w-[4px] w-[2px] h-5.5 sm:h-6 xl:h-0 bg-blue-500",
-          cursorClassName,
+          cursorClassName
         )}
       ></motion.span>
     </div>

@@ -6,10 +6,17 @@ import { Skills } from "./Components/Skills";
 import { Contact } from "./Components/Contact";
 import { Projects } from "./Components/Projects";
 import { BackgroundBeams } from "./Components/ui/background-beams";
+import { ThemeProvider, useTheme } from "./context/ThemeContext";
 
-export const App = () => {
+const AppContent = () => {
+  const { isDark } = useTheme();
+
   return (
-    <div className="relative min-h-screen w-full bg-black text-white overflow-hidden">
+    <div
+      className={`relative min-h-screen w-full ${
+        isDark ? "bg-black text-white" : "bg-gray-50 text-gray-900"
+      } overflow-hidden transition-colors duration-300`}
+    >
       <div className="relative z-10">
         <Router>
           <Header />
@@ -25,5 +32,13 @@ export const App = () => {
         </Router>
       </div>
     </div>
+  );
+};
+
+export const App = () => {
+  return (
+    <ThemeProvider>
+      <AppContent />
+    </ThemeProvider>
   );
 };
