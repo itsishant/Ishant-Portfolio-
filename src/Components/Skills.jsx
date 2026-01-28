@@ -136,7 +136,6 @@ const TechButton = ({ name, isDark }) => {
         Vercel: "text-gray-800 border-lined hover:bg-gray-200",
         Render: "text-gray-800 border-lined hover:bg-gray-200",
         MySQL: "text-gray-800 border-lined hover:bg-gray-200",
-        PostgreSQL: "text-gray-800 border-lined hover:bg-gray-200",
       };
 
   const iconMap = {
