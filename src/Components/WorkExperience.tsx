@@ -21,10 +21,10 @@ export const WorkExperience = () => {
       <div
         className={`${
           isDark ? "bg-neutral-800" : "bg-white border border-gray-200"
-        } shadow-2xl w-52 md:w-80 mx-auto rounded-xl mb-6 md:mb-8`}
+        } shadow-2xl w-59 md:w-96 mx-auto py-1 rounded-xl tracking-wide mb-6 md:mb-8`}
       >
         <div
-          className={`bg-clip-text text-transparent text-xl md:text-3xl font-bold py-1.5 md:py-2 text-center ${
+          className={`bg-clip-text text-transparent text-2xl md:text-4xl font-bold py-1.5 md:py-2 text-center ${
             !isDark ? "!text-black" : ""
           }`}
           style={{ fontFamily: "Poppins" }}

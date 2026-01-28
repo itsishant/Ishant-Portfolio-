@@ -2,13 +2,14 @@ import { About } from "./About";
 import { Skills } from "./Skills";
 import { motion } from "framer-motion";
 import GitHubCalendar from "react-github-calendar";
-import { TypewriterEffectSmooth } from "./ui/Type-writer";
+import { TypewriterEffectSmooth } from "./ui/type-writer";
+import ShinyText from "./ui/Shiny-text";
 import "@fontsource/poppins";
 import "@fontsource/poppins/400.css";
 import "@fontsource/poppins/400-italic.css";
 import { Projects } from "./Projects";
 import { Contact } from "./Contact";
-import { FileSpreadsheet, LinkedinIcon, X } from "lucide-react";
+import { FileSpreadsheet, X } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa";
 import {
   RiGithubFill,
@@ -53,7 +54,7 @@ export const Home = () => {
           </motion.h2>
 
           <div className="mt-4 grid grid-cols-1 gap-4 text-sm sm:text-base md:text-xl font-sans text-neutral-900">
-            <p
+            <div
               className={`${
                 isDark ? "text-neutral-500" : "text-gray-600"
               } font-semibold flex flex-wrap items-center`}
@@ -71,8 +72,8 @@ export const Home = () => {
                   delay={1000}
                 />
               </span>
-            </p>
-            <div class="flex justify-center items-center md:gap-8 gap-6">
+            </div>
+            <div className="flex justify-center items-center md:gap-8 gap-6">
               <motion.div
                 initial={{ opacity: 0, y: 0 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -82,7 +83,7 @@ export const Home = () => {
                 }}
                 whileTap={{ y: 0 }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
-                class={`${
+                className={`${
                   isDark ? "bg-neutral-800/80" : "bg-blue-500"
                 } h-10 w-32 flex justify-center items-center group relative shadow-[0px_1px_2px_0px_rgba(255,255,255,0.1)inset, 0px-1px_2px_0px_rgba(255,255,255,0.1)_inset] rounded-lg flex justify-center items-center`}
               >
@@ -119,11 +120,109 @@ export const Home = () => {
 
         <GithubGraph />
       </div>
+
+      <div className="relative md:py-12 md:mt-8 px-4 md:px-10">
+        <div
+          className={`${
+            isDark ? "bg-neutral-800" : "bg-white border border-gray-200"
+          } shadow-2xl w-58 mx-auto md:w-96 py-1 rounded-xl mb-8`}
+        >
+          <div
+            className={`bg-clip-text text-transparent text-2xl tracking-wide md:text-4xl font-bold py-2 text-center ${
+              !isDark ? "!text-black" : ""
+            }`}
+            style={{ fontFamily: "Poppins" }}
+          >
+            <ShinyText text="OS Contribution" disabled={false} speed={2} />
+          </div>
+        </div>
+
+        {/* Circular Image - Mobile: Colored only, Desktop: B&W with hover to colored */}
+        <a
+          href="https://github.com/dodopayments/billingsdk/pull/336"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-col justify-start items-center my-8 cursor-pointer"
+        >
+          {/* Mobile Version - Colored Image Only */}
+          <div className="md:hidden">
+            <img
+              src="/dodo_payments.png"
+              alt="Dodo Payments"
+              className="size-14 rounded-full object-cover shadow-lg hover:shadow-xl transition-shadow"
+            />
+          </div>
+
+          {/* Desktop Version - B&W with Hover to Colored */}
+          <motion.div
+            className="hidden md:block relative size-18 rounded-full overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+            whileHover="hover"
+            initial="initial"
+          >
+            {/* Black & White Image - Initially Visible */}
+            <motion.img
+              src="/dodo_payments_white_black.png"
+              alt="Dodo Payments"
+              className="absolute w-full h-full object-cover rounded-full"
+              variants={{
+                initial: { opacity: 1 },
+                hover: { opacity: 0 },
+              }}
+              transition={{ duration: 0.3 }}
+            />
+
+            {/* Colored Image - Hidden until Hover */}
+            <motion.img
+              src="/dodo_payments.png"
+              alt="Dodo Payments"
+              className="absolute w-full h-full object-cover rounded-full"
+              variants={{
+                initial: { opacity: 0 },
+                hover: { opacity: 1 },
+              }}
+              transition={{ duration: 0.3 }}
+            />
+          </motion.div>
+
+          {/* Text Below */}
+          <p
+            className={`mt-4 text-sm font-semibold ${isDark ? "text-neutral-400" : "text-neutral-700"}`}
+          >
+            Dodo Payments
+          </p>
+        </a>
+      </div>
+
+      <div
+        className={`border-t-2 border-dotted ${isDark ? "border-neutral-700" : "border-gray-300"} my-8 mx-8 md:hidden`}
+      ></div>
+
       <WorkExperience />
+
+      <div
+        className={`border-t-2 border-dotted ${isDark ? "border-neutral-700" : "border-gray-300"} my-8 mx-8 md:hidden`}
+      ></div>
+
       <Projects />
+
+      <div
+        className={`border-t-2 border-dotted ${isDark ? "border-neutral-700" : "border-gray-300"} my-8 mx-8 md:hidden`}
+      ></div>
+
       <Skills />
+
+      <div
+        className={`border-t-2 border-dotted ${isDark ? "border-neutral-700" : "border-gray-300"} my-8 mx-8 md:hidden`}
+      ></div>
+
       <About />
+
+      <div
+        className={`border-t-2 border-dotted ${isDark ? "border-neutral-700" : "border-gray-300"} my-8 mx-8 md:hidden`}
+      ></div>
+
       <Contact />
+
       <div
         className={`w-full text-center ${
           isDark ? "border-neutral-700" : "border-gray-300"
