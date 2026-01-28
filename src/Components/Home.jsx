@@ -25,6 +25,7 @@ import { GithubGraph } from "./GithubGraph";
 import { WorkExperience } from "./WorkExperience";
 import { useTheme } from "../context/ThemeContext";
 
+
 const words = [
   {
     text: "Building The Future ",
