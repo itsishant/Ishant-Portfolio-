@@ -138,7 +138,6 @@ export const Home = () => {
           </div>
         </div>
 
-        {/* Circular Image - Mobile: Colored only, Desktop: B&W with hover to colored */}
         <a
           href="https://github.com/dodopayments/billingsdk/pull/336"
           target="_blank"
@@ -154,13 +153,11 @@ export const Home = () => {
             />
           </div>
 
-          {/* Desktop Version - B&W with Hover to Colored */}
           <motion.div
             className="hidden md:block relative size-18 rounded-full overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
             whileHover="hover"
             initial="initial"
           >
-            {/* Black & White Image - Initially Visible */}
             <motion.img
               src="/dodo_payments_white_black.png"
               alt="Dodo Payments"
@@ -172,7 +169,6 @@ export const Home = () => {
               transition={{ duration: 0.3 }}
             />
 
-            {/* Colored Image - Hidden until Hover */}
             <motion.img
               src="/dodo_payments.png"
               alt="Dodo Payments"
@@ -185,7 +181,6 @@ export const Home = () => {
             />
           </motion.div>
 
-          {/* Text Below */}
           <p
             className={`mt-4 text-sm font-semibold ${isDark ? "text-neutral-400" : "text-neutral-700"}`}
           >

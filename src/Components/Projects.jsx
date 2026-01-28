@@ -86,7 +86,7 @@ export const Projects = () => {
           <div
             className={`${
               isDark ? "bg-black" : "bg-white"
-            } h-[350px] md:h-[400px] w-[370px] rounded-md border-2 border-dotted ${
+            } h-[350px] md:h-[350px] w-[350px] rounded-md border-2 border-dotted ${
               isDark ? "border-neutral-600" : "border-gray-800"
             }`}
           >
@@ -128,7 +128,7 @@ export const Projects = () => {
           <div
             className={`${
               isDark ? "bg-black" : "bg-white"
-            } h-[350px] md:h-[400px] w-[370px]  rounded-md border-2 border-dotted ${
+            } h-[350px] md:h-[350px] w-[350px]  rounded-md border-2 border-dotted ${
               isDark ? "border-neutral-600" : "border-gray-800"
             }`}
           >
@@ -182,7 +182,7 @@ export const Projects = () => {
           <div
             className={`${
               isDark ? "bg-black" : "bg-white"
-            } h-[350px] md:h-[430px] w-[370px] rounded-md border-2 border-dotted ${
+            } h-[350px] md:h-[350px] w-[350px] rounded-md border-2 border-dotted ${
               isDark ? "border-neutral-600" : "border-gray-800"
             }`}
           >
@@ -236,7 +236,7 @@ export const Projects = () => {
           <div
             className={`${
               isDark ? "bg-black" : "bg-white"
-            } h-[350px] md:h-[430px] w-[370px] rounded-md border-2 border-dotted ${
+            } h-[350px] md:h-[350px] w-[350px] rounded-md border-2 border-dotted ${
               isDark ? "border-neutral-600" : "border-gray-800"
             }`}
           >
@@ -327,7 +327,7 @@ export const Projects = () => {
         <div
           className={`${
             isDark ? "bg-black" : "bg-white"
-          } h-[350px] md:h-[430px] w-[370px] rounded-xl border-2 border-dotted ${
+          } h-[350px] md:h-[430px] w-[350px] rounded-xl border-2 border-dotted ${
             isDark ? "border-neutral-700" : "border-gray-300"
           }`}
         >
@@ -369,7 +369,7 @@ export const Projects = () => {
         <div
           className={`${
             isDark ? "bg-black" : "bg-white"
-          } h-[350px] md:h-[430px] w-[370px] rounded-xl border-2 border-dotted ${
+          } h-[350px] md:h-[430px] w-[350px] rounded-xl border-2 border-dotted ${
             isDark ? "border-neutral-700" : "border-gray-300"
           }`}
         >
