@@ -2,7 +2,7 @@ import { About } from "./About";
 import { Skills } from "./Skills";
 import { motion } from "framer-motion";
 import GitHubCalendar from "react-github-calendar";
-import { TypewriterEffectSmooth } from "./ui/type-writer";
+import { TypewriterEffectSmooth } from "./ui/Type-writer";
 import ShinyText from "./ui/Shiny-text";
 import "@fontsource/poppins";
 import "@fontsource/poppins/400.css";
