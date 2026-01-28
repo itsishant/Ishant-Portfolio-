@@ -25,6 +25,7 @@ import {
   SiVercel,
   SiRender,
   SiMysql,
+  SiPostgresql,
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 
@@ -36,10 +37,10 @@ export const Skills = () => {
       <div
         className={`${
           isDark ? "bg-neutral-800" : "bg-white border border-gray-200"
-        } shadow-2xl w-36 mx-auto rounded-xl mb-8`}
+        } shadow-2xl w-28 md:w-36 mx-auto rounded-xl mb-4 md:mb-8`}
       >
         <div
-          className={`bg-clip-text text-transparent text-3xl md:text-4xl font-bold py-2 text-center ${
+          className={`bg-clip-text text-transparent text-2xl md:text-4xl font-bold py-1 md:py-2 text-center ${
             !isDark ? "!text-black" : ""
           }`}
           style={{ fontFamily: "Poppins" }}
@@ -51,11 +52,11 @@ export const Skills = () => {
       <h2
         className={`${
           isDark ? "text-gray-600" : "text-gray-700"
-        } text-lg md:text-xl text-center tracking-tight mb-3`}
+        } text-base md:text-xl text-center tracking-tight mb-2 md:mb-3`}
       >
         Languages
       </h2>
-      <div className="grid grid-cols-2 gap-2 sm:grid-cols-2 md:grid-cols-3 md:gap-3 md:max-w-lg md:space-x-2 mx-1 md:mx-auto mb-8">
+      <div className="flex flex-wrap justify-center gap-1.5 md:gap-3 md:max-w-lg mx-1 md:mx-auto mb-4 md:mb-8">
         <TechButton name="JavaScript" colorClass="yellow-400" isDark={isDark} />
         <TechButton name="Java" colorClass="red-400" isDark={isDark} />
         <TechButton name="TypeScript" colorClass="indigo-400" isDark={isDark} />
@@ -64,17 +65,18 @@ export const Skills = () => {
       <h2
         className={`${
           isDark ? "text-gray-600" : "text-gray-700"
-        } text-lg md:text-xl tracking-tight text-center mb-3`}
+        } text-base md:text-xl tracking-tight text-center mb-2 md:mb-3`}
       >
         Tools & Technologies
       </h2>
-      <div className="grid grid-cols-2 gap-2 sm:grid-cols-2 md:grid-cols-3 md:gap-3 max-w-md md:max-w-lg mx-1 md:mx-auto">
+      <div className="flex flex-wrap justify-center gap-1.5 md:gap-3 max-w-md md:max-w-lg mx-1 md:mx-auto">
         <TechButton name="React.js" colorClass="gray-400" isDark={isDark} />
         <TechButton name="Tailwind CSS" colorClass="gray-400" isDark={isDark} />
         <TechButton name="Express.js" colorClass="gray-400" isDark={isDark} />
         <TechButton name="MongoDB" colorClass="green-400" isDark={isDark} />
         <TechButton name="MySQL" colorClass="sky-400" isDark={isDark} />
         <TechButton name="Prisma ORM" colorClass="purple-400" isDark={isDark} />
+        <TechButton name="PostgreSQL" colorClass="sky-400" isDark={isDark} />
         <TechButton name="Zod" colorClass="pink-400" isDark={isDark} />
         <TechButton name="Git" colorClass="orange-400" isDark={isDark} />
         <TechButton name="Postman" colorClass="amber-400" isDark={isDark} />
@@ -111,6 +113,7 @@ const TechButton = ({ name, isDark }) => {
         Vercel: "text-neutral-200 border-lined hover:bg-gray-950",
         Render: "text-neutral-200 border-lined hover:bg-gray-950",
         MySQL: "text-neutral-200 border-lined hover:bg-gray-950",
+        PostgreSQL: "text-neutral-200 border-lined hover:bg-gray-950",
       }
     : {
         JavaScript: "text-gray-800 border-lined hover:bg-gray-200",
@@ -122,6 +125,7 @@ const TechButton = ({ name, isDark }) => {
         "Express.js": "text-gray-800 border-lined hover:bg-gray-200",
         MongoDB: "text-gray-800 border-lined hover:bg-gray-200",
         "Prisma ORM": "text-gray-800 border-lined hover:bg-gray-200",
+        PostgreSQL: "text-gray-800 border-lined hover:bg-gray-200",
         Zod: "text-gray-800 border-lined hover:bg-gray-200",
         Git: "text-gray-800 border-lined hover:bg-gray-200",
         Postman: "text-gray-800 border-lined hover:bg-gray-200",
@@ -132,6 +136,7 @@ const TechButton = ({ name, isDark }) => {
         Vercel: "text-gray-800 border-lined hover:bg-gray-200",
         Render: "text-gray-800 border-lined hover:bg-gray-200",
         MySQL: "text-gray-800 border-lined hover:bg-gray-200",
+        PostgreSQL: "text-gray-800 border-lined hover:bg-gray-200",
       };
 
   const iconMap = {
@@ -144,6 +149,7 @@ const TechButton = ({ name, isDark }) => {
     MongoDB: <SiMongodb className="text-green-600" />,
     MySQL: <SiMysql className="" />,
     "Prisma ORM": <SiPrisma className="text-purple-400" />,
+    PostgreSQL: <SiPostgresql className="text-gray-200 items" />,
     Zod: <SiZod className="text-pink-400" />,
     Git: <FaGitAlt className="text-orange-500" />,
     Postman: <SiPostman className="text-amber-500" />,
@@ -157,14 +163,14 @@ const TechButton = ({ name, isDark }) => {
 
   return (
     <span
-      className={`flex items-center gap-2 border-dotted border-2 ${
+      className={`flex items-center gap-1 md:gap-2 border-dotted border-2 ${
         isDark ? "hover:text-neutral-300" : "hover:text-gray-900"
-      } transition px-2 py-1.5 rounded-lg text-sm md:text-base font-semibold justify-center ${
+      } transition px-1.5 md:px-2 py-1 md:py-1.5 rounded-lg text-xs md:text-base font-semibold justify-center ${
         colorMap[name]
       }`}
     >
       {iconMap[name] && (
-        <span className="text-base md:text-lg">{iconMap[name]}</span>
+        <span className="text-sm md:text-lg">{iconMap[name]}</span>
       )}
       {name}
     </span>
