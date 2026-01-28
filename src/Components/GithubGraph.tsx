@@ -163,20 +163,20 @@ function GitHubContributionsGraph({ username }: { username: string }) {
 
   return (
     <div
-      className={`relative rounded-2xl md:p-6
+      className={`relative rounded-2xl p-2 md:p-6
   ${
     isDark
-      ? "bg-transparent border-transparent md:border-neutral-800  md:bg-neutral-900/50"
-      : "bg-transparent border-transparent md:border-gray-200 md:bg-white/90 "
+      ? "bg-neutral-900/50 border-neutral-800"
+      : "bg-white/90 border-gray-200"
   }
-  backdrop-blur-md border md:shadow-[0_0_30px_rgba(0,0,0,0.3)]
+  backdrop-blur-md border shadow-[0_0_30px_rgba(0,0,0,0.3)]
   transition-all duration-500
   hover:shadow-[0_0_35px_rgba(16,185,129,0.15)]
 `}
     >
-      <div className="flex items-center justify-between mb-4">
+      <div className="flex items-center justify-between md:justify-between mb-3 md:mb-4 mt-2 md:mt-0">
         <h3
-          className={`text-lg hidden md:block font-medium ${
+          className={`text-sm md:text-lg font-medium ${
             isDark ? "text-white" : "text-gray-900"
           }`}
         >
@@ -215,7 +215,7 @@ function GitHubContributionsGraph({ username }: { username: string }) {
       </div>
 
       <div
-        className="overflow-x-auto pb-3 md:px-0 w-96 md:w-full md:size md:mx-0"
+        className="overflow-x-auto pb-3"
         style={{
           scrollbarWidth: "thin",
           scrollbarColor: isDark ? "#22c55e #262626" : "#22c55e #f5f5f5",
@@ -377,7 +377,7 @@ function GitHubContributionsGraph({ username }: { username: string }) {
 
 export const GithubGraph = () => {
   return (
-    <div className="flex flex-col justify-center items-center w-full px-7 mt-10 md:mt-12 mr-4 md:mr-0">
+    <div className="flex flex-col justify-center items-center w-full px-3 md:px-7 mt-10 md:mt-12 mr-0 md:mr-0 ml-0 md:ml-0">
       <div className="w-full md:max-w-5xl">
         <GitHubContributionsGraph username="itsishant" />
       </div>

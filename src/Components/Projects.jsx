@@ -13,7 +13,7 @@ export const Projects = () => {
       <div
         className={`${
           isDark ? "bg-neutral-800" : "bg-white border border-gray-200"
-        } shadow-2xl w-58 md:w-96 mx-auto  rounded-xl mb-8`}
+        } shadow-2xl w-58 md:w-96 mx-auto rounded-xl mb-8`}
       >
         <div
           className={`bg-clip-text text-transparent  text-3xl md:text-5xl font-bold py-2 text-center ${
