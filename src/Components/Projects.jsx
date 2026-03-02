@@ -84,16 +84,17 @@ export const Projects = () => {
           transition={{ duration: 0.3 }}
           className="space-y-10 gap-8 p-8 justify-items-center items-center"
         >
-          <div
+
+           <div
             className={`${
               isDark ? "bg-black" : "bg-white"
-            } h-[350px] md:h-[350px] w-[350px] rounded-md border-2 border-dotted ${
-              isDark ? "border-neutral-600" : "border-gray-800"
+            } h-[375px] md:h-[375px] w-[350px] md:w-[360px] rounded-md border border-dashed ${
+              isDark ? "border-neutral-500" : "border-gray-800"
             }`}
           >
             <div>
               <video
-                src="ShazorPay.mp4"
+                src="loopify.mp4"
                 autoPlay
                 muted
                 loop
@@ -102,7 +103,7 @@ export const Projects = () => {
               />
               <div className="flex items-center ml-4 mt-1 space-x-4">
                 <a
-                  href="https://github.com/itsishant/paytm"
+                  href="https://github.com/itsishant/loopify"
                   className={`flex items-center text-lg ${
                     isDark
                       ? "text-neutral-100 hover:text-neutral-300"
@@ -113,6 +114,19 @@ export const Projects = () => {
                   GitHub
                   <ExternalLinkIcon className="w-5 h-5 ml-1 transition" />
                 </a>
+
+                 <a
+                  href="https://loopify-ishant.vercel.app/"
+                  className={`flex items-center text-lg ${
+                    isDark
+                      ? "text-neutral-100 hover:text-neutral-300"
+                      : "text-gray-700 hover:text-gray-900"
+                  } transition`}
+                  target="_blank"
+                >
+                  View
+                  <ExternalLinkIcon className="w-5 h-5 ml-1 transition" />
+                </a>
               </div>
               <span
                 style={{ fontFamily: "Poppins" }}
@@ -120,17 +134,74 @@ export const Projects = () => {
                   isDark ? "text-neutral-400" : "text-gray-600"
                 } tracking-tight text-md ml-4 mt-2`}
               >
-                ShazorPay – A full-stack payment solution built for speed,
-                security, scalability and real-time transactions made easy.
+                Loopify – 
+A subscription management platform that notifies users before renewals through email reminders and alerts, helping them stay in control of their subscriptions.
+
               </span>
             </div>
           </div>
 
+        
+
           <div
             className={`${
               isDark ? "bg-black" : "bg-white"
-            } h-[350px] md:h-[350px] w-[350px]  rounded-md border-2 border-dotted ${
-              isDark ? "border-neutral-600" : "border-gray-800"
+            } h-[350px] md:h-[350px] w-[350px] rounded-md border border-dashed ${
+              isDark ? "border-neutral-500" : "border-gray-800"
+            }`}
+          >
+            <div>
+              <video
+                src="DevHub.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="rounded-xl p-2 w-full h-auto"
+              />
+              <div className="flex items-center ml-4 mt-2 space-x-4">
+                <a
+                  href="https://github.com/itsishant/DevHub"
+                  className={`flex items-center text-lg ${
+                    isDark
+                      ? "text-neutral-100 hover:text-neutral-300"
+                      : "text-gray-700 hover:text-gray-900"
+                  } tracking-tight transition`}
+                  target="_blank"
+                >
+                  GitHub
+                  <ExternalLinkIcon className="w-5 h-5 ml-1 transition" />
+                </a>
+                <a
+                  href="https://devhub-ishant.vercel.app/"
+                  className={`flex items-center text-lg ${
+                    isDark
+                      ? "text-neutral-100 hover:text-neutral-300"
+                      : "text-gray-700 hover:text-gray-900"
+                  } transition`}
+                  target="_blank"
+                >
+                  View
+                  <ExternalLinkIcon className="w-5 h-5 ml-1 transition" />
+                </a>
+              </div>
+              <span
+                style={{ fontFamily: "Poppins" }}
+                className={`flex ${
+                  isDark ? "text-neutral-400" : "text-gray-600"
+                } tracking-tight text-md ml-4 mt-1`}
+              >
+                DevHub – A community where developers come together to share
+                knowledge, showcase projects, and collaborate on ideas.
+              </span>
+            </div>
+          </div>
+
+            <div
+            className={`${
+              isDark ? "bg-black" : "bg-white"
+            } h-[350px] md:h-[350px] w-[350px]  rounded-md border border-dashed ${
+              isDark ? "border-neutral-500" : "border-gray-800"
             }`}
           >
             <div>
@@ -183,62 +254,8 @@ export const Projects = () => {
           <div
             className={`${
               isDark ? "bg-black" : "bg-white"
-            } h-[350px] md:h-[350px] w-[350px] rounded-md border-2 border-dotted ${
-              isDark ? "border-neutral-600" : "border-gray-800"
-            }`}
-          >
-            <div>
-              <video
-                src="DevHub.mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="rounded-xl p-2 w-full h-auto"
-              />
-              <div className="flex items-center ml-4 mt-2 space-x-4">
-                <a
-                  href="https://github.com/itsishant/DevHub"
-                  className={`flex items-center text-lg ${
-                    isDark
-                      ? "text-neutral-100 hover:text-neutral-300"
-                      : "text-gray-700 hover:text-gray-900"
-                  } tracking-tight transition`}
-                  target="_blank"
-                >
-                  GitHub
-                  <ExternalLinkIcon className="w-5 h-5 ml-1 transition" />
-                </a>
-                <a
-                  href="https://devhub-ishant.vercel.app/"
-                  className={`flex items-center text-lg ${
-                    isDark
-                      ? "text-neutral-100 hover:text-neutral-300"
-                      : "text-gray-700 hover:text-gray-900"
-                  } transition`}
-                  target="_blank"
-                >
-                  View
-                  <ExternalLinkIcon className="w-5 h-5 ml-1 transition" />
-                </a>
-              </div>
-              <span
-                style={{ fontFamily: "Poppins" }}
-                className={`flex ${
-                  isDark ? "text-neutral-400" : "text-gray-600"
-                } tracking-tight text-md ml-4 mt-1`}
-              >
-                DevHub – A community where developers come together to share
-                knowledge, showcase projects, and collaborate on ideas.
-              </span>
-            </div>
-          </div>
-
-          <div
-            className={`${
-              isDark ? "bg-black" : "bg-white"
-            } h-[350px] md:h-[350px] w-[350px] rounded-md border-2 border-dotted ${
-              isDark ? "border-neutral-600" : "border-gray-800"
+            } h-[350px] md:h-[350px] w-[350px] rounded-md border border-dashed ${
+              isDark ? "border-neutral-500" : "border-gray-800"
             }`}
           >
             <div>
@@ -287,6 +304,48 @@ export const Projects = () => {
               </span>
             </div>
           </div>
+
+           <div
+            className={`${
+              isDark ? "bg-black" : "bg-white"
+            } h-[350px] md:h-[350px] w-[350px] rounded-md border border-dashed ${
+              isDark ? "border-neutral-500" : "border-gray-800"
+            }`}
+          >
+            <div>
+              <video
+                src="ShazorPay.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="rounded-xl p-2 w-full h-auto"
+              />
+              <div className="flex items-center ml-4 mt-1 space-x-4">
+                <a
+                  href="https://github.com/itsishant/paytm"
+                  className={`flex items-center text-lg ${
+                    isDark
+                      ? "text-neutral-100 hover:text-neutral-300"
+                      : "text-gray-700 hover:text-gray-900"
+                  } tracking-tight transition`}
+                  target="_blank"
+                >
+                  GitHub
+                  <ExternalLinkIcon className="w-5 h-5 ml-1 transition" />
+                </a>
+              </div>
+              <span
+                style={{ fontFamily: "Poppins" }}
+                className={`flex ${
+                  isDark ? "text-neutral-400" : "text-gray-600"
+                } tracking-tight text-md ml-4 mt-2`}
+              >
+                ShazorPay – A full-stack payment solution built for speed,
+                security, scalability and real-time transactions made easy.
+              </span>
+            </div>
+          </div>
         </motion.div>
       )}
 
@@ -296,24 +355,73 @@ export const Projects = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.3 }}
-          className="flex justify-center items-center p-20"
+          className="flex justify-center items-center p-4 md:p-8"
         >
           <div
             className={`${
-              isDark
-                ? "bg-neutral-900/50 border-neutral-800"
-                : "bg-white/90  border-gray-200"
-            } backdrop-blur-md border rounded-2xl px-6 py-8 text-center`}
-            style={{ fontFamily: "Poppins" }}
+              isDark ? "bg-black" : "bg-white"
+            } h-auto md:h-[480px] w-full md:w-[580px] rounded-md border border-dashed ${
+              isDark ? "border-neutral-500" : "border-gray-800"
+            } flex flex-col md:flex-row`}
           >
-            <h3
-              className={`text-2xl md:text-3xl font-bold  ${
-                isDark ? "text-neutral-400" : "text-gray-900"
-              }`}
-              style={{ fontFamily: "Poppins" }}
-            >
-              Coming Soon
-            </h3>
+            <div className="w-full md:w-1/2 flex items-center justify-center p-4 md:p-0">
+              <video
+                src="loopify-mobile.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="rounded-lg border border-dashed border-neutral-500 w-[200px] md:w-[220px] h-[350px] md:h-[440px]"
+              />
+            </div>
+            <div className="w-full md:w-1/2 flex flex-col justify-center p-4 md:p-6">
+              <div className="border-t md:border-t-0 md:border-l border-dashed border-neutral-500 pt-4 md:pt-0 md:pl-6 flex flex-col justify-center">
+                <h3
+                  style={{ fontFamily: "Poppins" }}
+                  className={`text-lg md:text-xl font-semibold text-center ${
+                    isDark ? "text-neutral-200" : "text-gray-900"
+                  }`}
+                >
+                  Loopify
+                </h3>
+                <span
+                  style={{ fontFamily: "Poppins" }}
+                  className={`text-center mt-3 md:mt-4 block ${
+                    isDark ? "text-neutral-400" : "text-gray-600"
+                  } tracking-tight text-xs md:text-sm`}
+                >
+                  A native Android app for subscription management that notifies users before renewals through push notifications and alerts.
+                </span>
+                <div className="flex items-center justify-center space-x-4 mt-4 md:mt-6">
+                  <a
+                    href="https://github.com/itsishant/loopify-android"
+                    style={{ fontFamily: "Poppins" }}
+                    className={`flex items-center text-sm md:text-base font-medium ${
+                      isDark
+                        ? "text-neutral-100 hover:text-neutral-300"
+                        : "text-gray-700 hover:text-gray-900"
+                    } tracking-tight transition`}
+                    target="_blank"
+                  >
+                    GitHub
+                    <ExternalLinkIcon className="w-4 md:w-5 h-4 md:h-5 ml-2 transition" />
+                  </a>
+                  <a
+                    href="https://github.com/itsishant/loopify-android"
+                    style={{ fontFamily: "Poppins" }}
+                    className={`flex items-center text-sm md:text-base font-medium ${
+                      isDark
+                        ? "text-neutral-100 hover:text-neutral-300"
+                        : "text-gray-700 hover:text-gray-900"
+                    } tracking-tight transition`}
+                    target="_blank"
+                  >
+                    View
+                    <ExternalLinkIcon className="w-4 md:w-5 h-4 md:h-5 ml-2 transition" />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </motion.div>
       )}
@@ -328,7 +436,7 @@ export const Projects = () => {
         <div
           className={`${
             isDark ? "bg-black" : "bg-white"
-          } h-[350px] md:h-[430px] w-[350px] rounded-xl border-2 border-dotted ${
+          } h-[350px] md:h-[430px] w-[350px] rounded-xl border border-dashed ${
             isDark ? "border-neutral-700" : "border-gray-300"
           }`}
         >
@@ -370,7 +478,7 @@ export const Projects = () => {
         <div
           className={`${
             isDark ? "bg-black" : "bg-white"
-          } h-[350px] md:h-[430px] w-[350px] rounded-xl border-2 border-dotted ${
+          } h-[350px] md:h-[430px] w-[350px] rounded-xl border border-dashed ${
             isDark ? "border-neutral-700" : "border-gray-300"
           }`}
         >

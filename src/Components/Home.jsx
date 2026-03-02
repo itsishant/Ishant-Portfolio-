@@ -190,31 +190,31 @@ export const Home = () => {
       </div>
 
       <div
-        className={`border-t-2 border-dotted ${isDark ? "border-neutral-700" : "border-gray-300"} my-8 mx-8 md:hidden`}
+        className={`border-t-2 border-dashed ${isDark ? "border-neutral-700" : "border-gray-300"} my-8 mx-8 md:hidden`}
       ></div>
 
       <WorkExperience />
 
       <div
-        className={`border-t-2 border-dotted ${isDark ? "border-neutral-700" : "border-gray-300"} my-8 mx-8 md:hidden`}
+        className={`border-t-2 border-dashed ${isDark ? "border-neutral-700" : "border-gray-300"} my-8 mx-8 md:hidden`}
       ></div>
 
       <Projects />
 
       <div
-        className={`border-t-2 border-dotted ${isDark ? "border-neutral-700" : "border-gray-300"} my-8 mx-8 md:hidden`}
+        className={`border-t-2 border-dashed ${isDark ? "border-neutral-700" : "border-gray-300"} my-8 mx-8 md:hidden`}
       ></div>
 
       <Skills />
 
       <div
-        className={`border-t-2 border-dotted ${isDark ? "border-neutral-700" : "border-gray-300"} my-8 mx-8 md:hidden`}
+        className={`border-t-2 border-dashed ${isDark ? "border-neutral-700" : "border-gray-300"} my-8 mx-8 md:hidden`}
       ></div>
 
       <About />
 
       <div
-        className={`border-t-2 border-dotted ${isDark ? "border-neutral-700" : "border-gray-300"} my-8 mx-8 md:hidden`}
+        className={`border-t-2 border-dashed ${isDark ? "border-neutral-700" : "border-gray-300"} my-8 mx-8 md:hidden`}
       ></div>
 
       <Contact />

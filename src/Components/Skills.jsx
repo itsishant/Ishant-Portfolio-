@@ -162,7 +162,7 @@ const TechButton = ({ name, isDark }) => {
 
   return (
     <span
-      className={`flex items-center gap-1 md:gap-2 border-dotted border-2 ${
+      className={`flex items-center gap-1 md:gap-2 border-dashed border md:border-neutral-500 border-neutral-600 ${
         isDark ? "hover:text-neutral-300" : "hover:text-gray-900"
       } transition px-1.5 md:px-2 py-1 md:py-1.5 rounded-lg text-xs md:text-base font-semibold justify-center ${
         colorMap[name]
